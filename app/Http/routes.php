@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ItemController@index');
+Route::resource('item', 'ItemController', ['except' => ['index']]);
