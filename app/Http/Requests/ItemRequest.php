@@ -24,9 +24,9 @@ class ItemRequest extends Request
     public function rules()
     {
         return [
-            'title' => 'required',
-            'subtitle' => 'required',
-            'description' => 'required'
+            'title' => 'required|min:5|max:255',
+            'subtitle' => 'required|min:5|max:255',
+            'description' => 'required|min:5|max:255'
         ];
     }
 }

@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title', 'Create new item')
+@section('title', 'Create item:')
 
 @section('content')
 
@@ -14,7 +14,7 @@
 
     {!! Form::open(['url' => 'item']) !!}
 
-    @include('item.form', ['submitButtonText' => 'Create Item'])
+    @include('item.form', ['submitButtonText' => 'Create item'])
 
     {!! Form::close() !!}
 

@@ -37,11 +37,13 @@ class DbItemRepository implements ItemRepositoryInterface
 
     public function update(Item $item, ItemRequest $request)
     {
-        // TODO: Implement update() method.
+        $item->update($request->all());
+
+        return $item;
     }
 
     public function delete(Item $item)
     {
-        // TODO: Implement delete() method.
+        $item->delete();
     }
 }

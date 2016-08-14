@@ -8,5 +8,13 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
+<script>
+    $(document).ready(function () {
+        $('.btn-danger').click(function () {
+            return confirm('Are you sure you want to delete?');
+        })
+    })
+</script>
+
 </body>
 </html>
