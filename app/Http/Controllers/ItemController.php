@@ -26,7 +26,8 @@ class ItemController extends Controller
     {
         $items = $this->items->all();
 
-        return response()->json(compact('items'));
+        return view('home', compact('items'));
+        //return response()->json(compact('items'));
 
     }
 
