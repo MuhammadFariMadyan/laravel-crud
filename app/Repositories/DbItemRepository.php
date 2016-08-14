@@ -19,17 +19,8 @@ class DbItemRepository implements ItemRepositoryInterface
     {
         Item::create($request->all());
     }
+    
 
-    public function get(Item $item)
-    {
-        // TODO: Implement get() method.
-    }
-
-    /**
-     * Get all items order by id.
-     *
-     * @return mixed
-     */
     public function all()
     {
         return Item::orderBy('id', 'DESC')->paginate(10);
