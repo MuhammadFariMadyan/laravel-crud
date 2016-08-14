@@ -17,7 +17,7 @@ class DbItemRepository implements ItemRepositoryInterface
 
     public function create(ItemRequest $request)
     {
-        // TODO: Implement create() method.
+        Item::create($request->all());
     }
 
     public function get(Item $item)
@@ -32,7 +32,7 @@ class DbItemRepository implements ItemRepositoryInterface
      */
     public function all()
     {
-        return Item::orderBy('id', 'ASC')->get();
+        return Item::orderBy('id', 'DESC')->paginate(10);
     }
 
     public function update(Item $item, ItemRequest $request)

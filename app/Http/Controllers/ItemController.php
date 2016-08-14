@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ItemRequest;
 use App\Repositories\ItemRepositoryInterface;
 use Illuminate\Http\Request;
 
@@ -38,18 +39,20 @@ class ItemController extends Controller
      */
     public function create()
     {
-        //
+        return view('item.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param ItemRequest|Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ItemRequest $request)
     {
-        //
+        $this->items->create($request);
+
+        return redirect('/');
     }
 
     /**

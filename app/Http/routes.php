@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'ItemController@index');
+Route::resource('item', 'ItemController', ['except' => ['index']]);
