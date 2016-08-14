@@ -17,6 +17,8 @@ interface ItemRepositoryInterface
 
     public function get(Item $item);
 
+    public function all();
+
     public function update(Item $item, ItemRequest $request);
 
     public function delete(Item $item);

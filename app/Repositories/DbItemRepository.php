@@ -25,6 +25,16 @@ class DbItemRepository implements ItemRepositoryInterface
         // TODO: Implement get() method.
     }
 
+    /**
+     * Get all items order by id.
+     *
+     * @return mixed
+     */
+    public function all()
+    {
+        return Item::orderBy('id', 'ASC')->get();
+    }
+
     public function update(Item $item, ItemRequest $request)
     {
         // TODO: Implement update() method.

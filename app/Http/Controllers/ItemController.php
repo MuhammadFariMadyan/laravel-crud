@@ -24,7 +24,10 @@ class ItemController extends Controller
      */
     public function index()
     {
-        //
+        $items = $this->items->all();
+
+        return response()->json(compact('items'));
+
     }
 
     /**
