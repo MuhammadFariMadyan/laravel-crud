@@ -2,7 +2,7 @@
 
 ## Functions
 
-+ list all times
++ list all itmes
 + create item
 + show a given item
 + update a given item
@@ -18,6 +18,7 @@
 6. run `php artisan db:seed` (insert simple data to the database)
 
 ## Details
++ `App/Http/routes.php`
 + `App/Http/Controllers/ItemController.php`
 + `App/Http/Requests/ItemRequest.php`
 + `App/Repositories/ItemRepositoryInterface.php`
@@ -26,3 +27,13 @@
 + `database/migrations/2016_08_14_095140_create_items_table.php`
 + `database/seeds/ItemSeeder.php`
 + `resources/views`
+
+## Screenshots
+### Home
+![home](https://github.com/richardtoth/laravel-crud/blob/develop/screenshots/home.png "Home")
+### Create
+![create](https://github.com/richardtoth/laravel-crud/blob/develop/screenshots/create.png "Create")
+### Show
+![show](https://github.com/richardtoth/laravel-crud/blob/develop/screenshots/show.png "Show")
+### Update
+![update](https://github.com/richardtoth/laravel-crud/blob/develop/screenshots/update.png "Update")
