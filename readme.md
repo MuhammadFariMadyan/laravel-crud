@@ -16,6 +16,7 @@
 4. run `php artisan key:generate`
 5. run `php artisan migrate` (create the tables)
 6. run `php artisan db:seed` (insert simple data to the database)
+7. run `php artisan serve`
 
 ## Details
 + `App/Http/routes.php`
