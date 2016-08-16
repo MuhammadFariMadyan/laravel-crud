@@ -19,7 +19,7 @@ class DbItemRepository implements ItemRepositoryInterface
     {
         Item::create($request->all());
     }
-    
+
 
     public function all()
     {
