@@ -2,7 +2,7 @@
 
 ## Functions
 
-+ list all itmes
++ list all items
 + create item
 + show a given item
 + update a given item
