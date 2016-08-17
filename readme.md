@@ -12,7 +12,7 @@
 0. `git clone https://github.com/richardtoth/laravel-crud.git`
 1. `cd laravel-crud`
 2. `composer install`
-3. create a .env file based on the env.example file in the project root and set up your databes connection data
+3. create a .env file based on the env.example file in the project root and set up your database connection data
 4. run `php artisan key:generate`
 5. run `php artisan migrate` (create the tables)
 6. run `php artisan db:seed` (insert simple data to the database)
